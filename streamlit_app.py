@@ -64,7 +64,7 @@ def plot_graph(weekly_capacity):
 st.title("Book Scanning Capacity Estimator")
 
 # User input for adjustable capacity (starting from 70k pages per week)
-weekly_capacity = st.slider("Adjust Weekly Capacity (Pages per Week)", min_value=70000, max_value=350000, value=70000, step=20000)
+weekly_capacity = st.slider("Adjust Weekly Capacity (Pages per Week)", min_value=70000, max_value=3000000, value=70000, step=20000)
 
 # Calculate resources needed
 manual_scanners, automated_scanners, people = calculate_resources(weekly_capacity)
