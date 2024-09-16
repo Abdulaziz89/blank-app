@@ -43,7 +43,7 @@ def plot_graph(weekly_capacity):
         plt.axhline(y=milestone, color='red', linestyle='--', label=f'{milestone} books milestone')
 
     # Adding titles and labels
-    plt.title(f'Cumulative Number of Books Scanned Over Time ({weekly_capacity:,} Pages per Week)', fontsize=14)
+    plt.title(f'Number of Books Scanned ({weekly_capacity:,} Pages per Week)', fontsize=14)
     plt.xlabel('Time (Years)', fontsize=12)
     plt.ylabel('Cumulative Number of Books', fontsize=12)
     plt.grid(True)
